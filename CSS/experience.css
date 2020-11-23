@@ -1,0 +1,67 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #dedede, #777);
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+	display: flex;
+	margin-top: 0.5em;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 0.5em;
+	border-radius: 15px;
+}
+h5 {
+	color: blue;
+}
+
+a {
+	background-color: red;
+}
+
+footer {
+	text-align: center;
+}
+
+.card {
+	width: 70%;
+}
+
+.card img {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card {
+	width: 49%;
+	margin: 7em auto;
+	padding: 10%;
+	box-shadow: 3px 5px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+.btn {
+	margin-left: 35%;
+	margin-top: 15%;
+}
+
+.card-img-top:hover {
+	cursor: help;
+}
+
+.btn:hover {
+	box-shadow: 2px 2px 2px 2px gray;
+	transition: 3ms;
+}
+
+.crd-text {
+	white-space: pre-line;
+}
