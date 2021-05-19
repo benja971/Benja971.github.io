@@ -1,0 +1,407 @@
+/* Affichages spécifiques sur ordinateur */
+@media screen and (min-width: 960px) {
+    #landing {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #bg {
+        position: fixed;
+        background-size: cover;
+        background-position: left;
+        animation: diapo 20s infinite;
+        filter: brightness(60%);
+        z-index: -1;
+    }
+
+    @keyframes diapo {
+        0%,
+        100% {
+            background-image: url("../Images/bg image.png");
+        }
+        34% {
+            background-image: url("../Images/formation-programmation-informatique-1.jpg");
+        }
+        67% {
+            background-image: url("../Images/gros-plan-homme-ecrivant-du-code-ordinateur-portable_158595-5169.jpg");
+        }
+    }
+
+    #logomenu.top {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    #logomenu {
+        position: fixed;
+        width: 100vw;
+        display: flex;
+        z-index: 9999;
+        align-items: center;
+        padding: 25px 0 25px 0;
+        cursor: default;
+        justify-content: space-around;
+        color: white;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    #logo {
+        cursor: default;
+    }
+
+    #logo img {
+        align-self: center;
+        max-height: 70px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        padding-right: 80px;
+    }
+
+    .menu-item {
+        position: relative;
+        margin-right: 3%;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        align-self: center;
+        color: inherit;
+    }
+
+    a.left {
+        position: relative;
+        padding-bottom: 1px;
+    }
+
+    a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+
+    #menu > a:hover {
+        /* border-bottom: 4px solid red; */
+        visibility: visible;
+        width: 100%;
+    }
+
+    #infos {
+        position: relative;
+        display: flex;
+        max-width: 90%;
+        flex-direction: column;
+        top: 50%;
+        left: 10%;
+    }
+
+    #infos h1 {
+        color: white;
+        font-weight: 700;
+        font-size: 3.7em;
+        padding-bottom: 15px;
+    }
+
+    #infos h3 {
+        color: white;
+        font-weight: 300;
+        font-size: 1.25em;
+        line-height: 1.5;
+    }
+
+    #btns {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    #infos > #btns a {
+        border: 2px solid rgb(242, 101, 89);
+        border-radius: 56px;
+        padding: 15px 30px 15px 30px;
+        background-color: rgb(242, 101, 89);
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #infos > #btns > a > #cv {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    #infos > #btns > #contact {
+        background-color: rgba(255, 255, 255, 0.25);
+        border-color: #ffffff;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid white;
+        border-radius: 56px;
+        font-size: 14px;
+        line-height: 1em;
+        letter-spacing: 1px;
+        color: white;
+        padding: 15px 30px 15px 30px;
+        cursor: pointer;
+    }
+
+    #infos > #btns > #cv:hover,
+    #infos > #btns > #contact:hover {
+        filter: brightness(80%);
+        transition: all 0.4s;
+    }
+
+    @keyframes move {
+        from {
+            top: 92%;
+        }
+        to {
+            top: 97%;
+        }
+    }
+
+    #landing > #down {
+        position: absolute;
+        left: 50%;
+        top: 95%;
+        color: white;
+        font-size: 2em;
+        transform: translate(-50%, -50%);
+        animation: 1s linear 2s infinite alternate move;
+    }
+
+    #way {
+        display: flex;
+        background-color: rgb(230, 230, 230);
+        padding: 60px 5% 60px 5%;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5%;
+        max-height: calc(100vh - 120px);
+    }
+
+    #way img {
+        position: relative;
+        box-shadow: 0px 14px 28px 0px rgb(0 0 0 / 16%);
+        height: 40vw;
+        max-height: calc(100vh - 200px);
+    }
+
+    #txt {
+        border-radius: 3px;
+        max-width: 50ch;
+    }
+
+    #txt h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2.625em;
+        line-height: 1.143;
+        color: rgb(19, 22, 34);
+    }
+
+    #txt h6 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.9em;
+        line-height: 1.6;
+        color: rgb(19, 22, 34);
+        letter-spacing: 1px;
+    }
+
+    .no-wrap {
+        white-space: nowrap;
+    }
+
+    #txt p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        color: rgb(105, 108, 119);
+        text-align: justify;
+    }
+
+    #txt button {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1em;
+        letter-spacing: 1px;
+        color: white;
+        border: 2px solid rgb(242, 101, 89);
+        padding: 15px 30px 15px 30px;
+        text-align: center;
+        background-color: rgb(242, 101, 89);
+        margin: 20px 10px 0 0;
+        cursor: pointer;
+        max-width: 250px;
+        white-space: nowrap;
+    }
+
+    #my-team {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.1% 0 0.1% 0;
+        background-color: rgb(230, 230, 230);
+        align-items: center;
+        padding-bottom: 6%;
+    }
+
+    #my-team > #titles {
+        display: flex;
+        position: relative;
+        width: 50%;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    #titles h2 {
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2.625em;
+        line-height: 1.143;
+        color: rgb(19, 22, 34);
+        align-self: center;
+        padding-top: 12%;
+    }
+    #titles h6 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.6;
+        color: #696c77;
+        letter-spacing: 1px;
+        align-self: center;
+        padding-top: 15px;
+    }
+
+    #cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 25%;
+        text-align: center;
+        box-shadow: 0 0 2em #696c77;
+        border-radius: 3px;
+    }
+
+    .card img {
+        border-radius: 50%;
+        max-width: 90px;
+        width: 640px;
+        margin-top: 5px;
+    }
+
+    .card h4 {
+        font-weight: 700;
+        font-size: 1.25em;
+        line-height: 1.6;
+        color: rgb(19, 22, 34);
+    }
+    .card p:nth-child(2n) {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        text-align: center;
+        font-style: italic;
+        color: #696c77;
+    }
+    .card p:nth-child(2n + 1) {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        text-align: center;
+        color: #696c77;
+    }
+
+    .contact-teamate {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-teamate i {
+        margin: 0 0.5em 1em 0.5em;
+        color: rgba(10, 10, 200, 0.7);
+        cursor: pointer;
+    }
+    .contact-teamate i:hover {
+        color: rgba(150, 20, 180, 0.7);
+    }
+
+    #contact-me {
+        display: flex;
+        color: white;
+    }
+    #contact-me h2 {
+        font-weight: 400;
+        font-size: 2.625em;
+        line-height: 1.143;
+        padding-bottom: 0.3em;
+    }
+    #contact-me p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.6;
+        padding-bottom: 2em;
+    }
+
+    #contact-me > img {
+        max-width: 40%;
+    }
+
+    .contact-card {
+        flex: 1;
+        padding: 17% 0 17% 12%;
+        background-color: #4287f5;
+    }
+
+    #content {
+        max-width: 70%;
+        box-shadow: 0 0 2em #494b53;
+        padding-left: 5px;
+        border-radius: 3px;
+    }
+
+    #communication-ways {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .way {
+        margin-bottom: 15px;
+        white-space: nowrap;
+    }
+
+    footer {
+        background-color: rgb(230, 230, 230);
+        text-align: center;
+        padding: 3px 0 3px 0;
+        margin-top: 0.1%;
+    }
+}
