@@ -27,26 +27,28 @@
         }
     }
 
-    #logomenu.top {
+    nav.top {
         background-color: #ffffff;
         color: black;
     }
 
-    #logomenu {
+    nav {
+        display: flex;
         position: fixed;
         width: 100vw;
         display: flex;
         z-index: 9999;
-        align-items: center;
         padding: 25px 0 25px 0;
-        cursor: default;
-        justify-content: space-around;
         color: white;
         transition: background-color 0.2s, color 0.2s;
+        align-items: center;
+        height: 15vh;
     }
 
     #logo {
+        position: inherit;
         cursor: default;
+        left: 5%;
     }
 
     #logo img {
@@ -55,21 +57,15 @@
         cursor: pointer;
     }
 
-    nav {
-        display: flex;
-        padding-right: 80px;
-    }
-
     .menu-item {
-        position: relative;
         margin-right: 3%;
         font-size: 15px;
         font-weight: bold;
         text-decoration: none;
         text-transform: uppercase;
         white-space: nowrap;
-        align-self: center;
         color: inherit;
+        right: -35%;
     }
 
     a.left {
@@ -94,8 +90,12 @@
         width: 100%;
     }
 
+    a.left.selected:before {
+        visibility: visible;
+        width: 100%;
+    }
+
     #menu > a:hover {
-        /* border-bottom: 4px solid red; */
         visibility: visible;
         width: 100%;
     }
@@ -147,7 +147,7 @@
     }
 
     #infos > #btns > #contact {
-        background-color: rgba(255, 255, 255, 0.25);
+        background-color: transparent;
         border-color: #ffffff;
         border: 2px solid white;
     }
@@ -157,10 +157,14 @@
         color: inherit;
     }
 
-    #infos > #btns > #cv:hover,
+    #infos > #btns > #cv:hover {
+        background-color: rgb(157, 66, 58);
+        border-color: rgb(157, 66, 58);
+        transition: background-color 0.3s, border-color 0.3s;
+    }
     #infos > #btns > #contact:hover {
-        filter: brightness(80%);
-        transition: filter 0.3s;
+        background-color: rgba(255, 255, 255, 0.25);
+        transition: background-color 0.3s, border-color 0.3s;
     }
 
     @keyframes move {
@@ -190,18 +194,21 @@
         align-items: center;
         justify-content: space-around;
         gap: 5%;
-        max-height: calc(100vh - 120px);
     }
 
     #way img {
         position: relative;
         box-shadow: 0px 14px 28px 0px rgb(0 0 0 / 16%);
         height: 40vw;
-        max-height: calc(100vh - 200px);
+        max-height: 70vh;
+    }
+
+    #way a {
+        text-decoration: none;
+        color: inherit;
     }
 
     #txt {
-        border-radius: 3px;
         max-width: 50ch;
     }
 
@@ -333,6 +340,10 @@
         color: #696c77;
     }
 
+    .card a {
+        text-decoration: none;
+    }
+
     .contact-teamate {
         display: flex;
         width: 100%;
@@ -365,18 +376,19 @@
     }
 
     #contact-me > img {
-        max-width: 40%;
+        width: 50%;
     }
 
-    .contact-card {
-        flex: 1;
-        padding: 17% 0 17% 12%;
-        background-color: #4287f5;
+    #contact-card {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-left: 15%;
     }
 
     #content {
         max-width: 70%;
-        box-shadow: 0 0 2em #494b53;
+        text-shadow: 0 0 2em #494b53;
         padding-left: 5px;
         border-radius: 3px;
     }
@@ -387,9 +399,17 @@
         width: 100%;
     }
 
-    .way {
+    .communication-way {
         margin-bottom: 15px;
-        white-space: nowrap;
+    }
+    .communication-way:hover {
+        transition: font-size 0.2s;
+        font-size: 20px;
+    }
+
+    .communication-way a {
+        color: white;
+        text-decoration: none;
     }
 
     footer {
