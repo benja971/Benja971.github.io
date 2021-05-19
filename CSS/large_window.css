@@ -160,7 +160,7 @@
     #infos > #btns > #cv:hover,
     #infos > #btns > #contact:hover {
         filter: brightness(80%);
-        transition: filter 0.4s;
+        transition: filter 0.3s;
     }
 
     @keyframes move {
