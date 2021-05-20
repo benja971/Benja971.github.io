@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/all.css" />
+        <link rel="stylesheet" href="./CSS/index.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+        <title>Home - NIDDAM Benjamin</title>
+    </head>
+    <body>
+        <div id="landing">
+            <div class="bg" id="bg1"></div>
+            <div class="bg" id="bg2"></div>
+            <div class="bg" id="bg3"></div>
+            <div class="bg" id="bg4"></div>
+
+            <nav>
+                <a id="logo" href="./index.html"><img src="./Images/logo.png" /></a>
+                <a id="home" class="menu-item left" href="./index.html" aria-current="page" class="colorBlack">Home</a>
+                <a id="about-me" class="menu-item left" href="./about-me.html">About me</a>
+                <a id="curriculum-vitae" class="menu-item left" href="./curriculum.html">My curriculum vitae</a>
+                <a id="portfolio" class="menu-item left" href="./portfolio.html">My portfolio</a>
+                <a id="contact" class="menu-item left" href="./contact.html">Contact</a>
+                <a id="horse-galery" class="menu-item left" href="./horse-galery2.html">My horse galery</a>
+            </nav>
+
+            <section id="infos">
+                <h1>Simpler is less funny</h1>
+                <h3>NIDDAM Benjamin, Developper</h3>
+
+                <div id="btns">
+                    <button id="cv" class="btn-infos"><a href="./Documents/CV Benjamin NIDDAM.pdf" target="_blank">Get my french CV</a></button>
+                    <button id="contact" class="btn-infos" onclick="document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth', block: 'nearest'})"><a>Contact me</a></button>
+                </div>
+            </section>
+
+            <a id="down" onclick="document.getElementById('way').scrollIntoView({ behavior: 'smooth', block: 'nearest'})"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+        <section id="way">
+            <div id="txt">
+                <h2>Where are <span class="no-wrap">you ?</span></h2>
+                <h6>This is a good question, and i'm gonna <span class="no-wrap">anwer you &#128521;</span></h6>
+                <p>This is my site staff, my name is NIDDAM Benjamin and you’ll find here some informations about me: my cv, some of my completed projects, …</p>
+                <button><a href="./portfolio.html">Get started now</a></button>
+            </div>
+            <img src="./Images/openshop.jpg" />
+        </section>
+
+        <section id="my-team">
+            <div id="titles">
+                <h2>My team</h2>
+                <h6>We are a team of young and motivated developers.</h6>
+            </div>
+            <div id="cards">
+                <div class="card">
+                    <img src="./Images/nico.png" />
+                    <div id="teamate-infos">
+                        <h4>GOUWY Nicolas</h4>
+                        <p>Developper</p>
+                        <p>47 characters ...</p>
+                    </div>
+                    <div class="contact-teamate">
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/peronne.jpg" />
+                    <div id="teamate-infos">
+                        <a href="http://benjaminperonne.fr/"><h4>PERONNE Benjamin</h4></a>
+
+                        <p>Developper</p>
+                        <p>Appheuuuul</p>
+                    </div>
+                    <div class="contact-teamate">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/brian.png" />
+                    <div id="teamate-infos">
+                        <h4>OBERSON Brian</h4>
+                        <p>Front-end developer</p>
+                        <p>Mais c’était sûr en fait !!!</p>
+                    </div>
+                    <div class="contact-teamate">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-me">
+            <img src="./Images/Contact me.jpg" alt="" />
+            <div id="contact-card">
+                <div id="content">
+                    <h2>Contact me</h2>
+                    <p>I am difficult to reach by phone, <span class="no-wrap">prefer emails or sms.</span></p>
+                    <address id="communication-ways">
+                        <div class="communication-way">
+                            <a href=""><i class="fas fa-phone"></i></a>
+                            <a href="tel:+590690704577">0690704577</a>
+                        </div>
+                        <div class="communication-way">
+                            <a href=""><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:niddam.benjamin@orange.fr">niddam.benjamin@orange.fr</a>
+                        </div>
+                        <div class="communication-way">
+                            <a href=""><i class="fas fa-address-card"></i></a>
+                            <a href="https://goo.gl/maps/3qcM3Rxdv3RF7Jmk8" target="_blank">1500 chemin de fontarabie, 97170, Petit-Bourg, Guadeloupe</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <p>© 2021 NIDDAM Benjamin</p>
+    </footer>
+
+    <script src="./Scripts/script.js"></script>
+</html>

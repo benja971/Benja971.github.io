@@ -1,0 +1,45 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 85vh;
+    margin-top: 15vh;
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 720px;
+        padding-top: 8vw;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+.swiper-container-horizontal {
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    .swiper-pagination.swiper-pagination-bullets {
+        background-color: transparent;
+        .swiper-pagination-bullet {
+            background-color: rgb(242, 101, 89);
+        }
+    }
+}
