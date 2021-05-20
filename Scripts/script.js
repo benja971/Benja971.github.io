@@ -6,30 +6,13 @@ function getScroll() {
 
 addEventListener("scroll", (e) => {
     if (getScroll() > 0) {
-        document.querySelector("nav").classList.add("top");
+        document.body.classList.add("top");
     } else {
-        document.querySelector("nav").classList.remove("top");
+        document.body.classList.remove("top");
     }
 });
 
 addEventListener("load", (e) => {
-    let title = document.title;
-    if (title.startsWith("Home")) {
-        document.getElementById("menu-item-1").classList.add("selected");
-    }
-    if (title.startsWith("About")) {
-        document.getElementById("menu-item-2").classList.add("selected");
-    }
-    if (title.startsWith("My curriculum")) {
-        document.getElementById("menu-item-3").classList.add("selected");
-    }
-    if (title.startsWith("My portfolio")) {
-        document.getElementById("menu-item-4").classList.add("selected");
-    }
-    if (title.startsWith("Contact")) {
-        document.getElementById("menu-item-5").classList.add("selected");
-    }
-    if (title.startsWith("My horse")) {
-        document.getElementById("menu-item-6").classList.add("selected");
-    }
+    const id = document.title.toLowerCase().split(" - ")[0].replaceAll(" ", "-");
+    document.getElementById(id).classList.add("selected");
 });

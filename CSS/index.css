@@ -136,11 +136,6 @@
         width: 100%;
     }
 
-    #menu > a:hover {
-        visibility: visible;
-        width: 100%;
-    }
-
     #infos {
         position: relative;
         display: flex;
@@ -460,5 +455,11 @@
         text-align: center;
         padding: 3px 0 3px 0;
         margin-top: 0.1%;
+    }
+}
+
+@media screen and (min-width: 642px) and (max-width: 959px) {
+    * {
+        background-color: blue;
     }
 }
