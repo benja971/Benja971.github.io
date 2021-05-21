@@ -27,6 +27,7 @@ nav {
     -ms-flex-pack: end;
     justify-content: flex-end;
     height: 15vh;
+    cursor: default;
 }
 nav .menu-item {
     margin-right: 3%;
@@ -36,6 +37,7 @@ nav .menu-item {
     text-transform: uppercase;
     white-space: nowrap;
     color: inherit;
+    cursor: pointer;
 }
 nav a.left {
     position: relative;
