@@ -1,0 +1,60 @@
+{
+    "projets": [
+        {
+            "name": "BashBuild",
+            "technologys": "C",
+            "description": "BashBuild est un jeu de simulation de gestion de ville dans le style Simscity mais en version console. En effet, vous devez construire des bâtiments (fermes, maison,…) qui rapportent de la nourriture et de l'argent. Ces ressources influent sur la population du jeu. Votre objectif est donc de faire prospérer cette dernière.",
+            "images": ["./Images/BB0.png", "./Images/BB1.jpg", "./Images/BB3.jpg", "./Images/BB2.jpg"],
+            "link": "https://github.com/benja971/Bash-Build"
+        },
+        {
+            "name": "WhatsAppLike",
+            "technologys": ["html", "css", "js"],
+            "description": "WhatsappLike est une application Web utilisant l'api \"WAL\" pour créer une copie Whatsapp. Comme whastapp, vous pouvez ajouter, supprimer des contacts. Envoyer des messages, …",
+            "images": ["./Images/wal1.png", "./Images/whatsappLike1.jpg", "./Images/whatsappLike4.jpg", "./Images/whatsappLike5.jpg"],
+            "link": "https://benjamin-niddam.dev/WhatsAppLike"
+        },
+        {
+            "name": "Shootixel",
+            "technologys": "Python",
+            "description": "Shootixel est un jeu python 2D utilisant la bibliothèque pygame. Votre objectif est de survivre devant les vaisseaux spatiaux ennemis en tirant lazers pour les éliminer. Au fur et à mesure que le jeu progresse, les ennemis sont de plus en plus rapide, leurs trajectoire change et des boss peuvent apparaître. Pour vous aider, des bonus de vie, de vitesse et plus encore sont là.",
+            "images": ["./Images/PlayerRed_Frame_01_png_processed.png", "./Images/shoot1.jpg", "./Images/shoot2.jpg"],
+            "link": "https://github.com/benja971/SHOOTIXEL"
+        },
+        {
+            "name": "DrawApp",
+            "technologys": "Java",
+            "description": "DrawApp est une application Java utilisant swing pour faire une copie de l'application de dessin Paint.",
+            "images": ["./Images/paint.png", "./Images/drawapp.jpg", "./Images/edit.jpg", "./Images/file.jpg"],
+            "link": "https://github.com/benja971/DrawApp"
+        },
+        {
+            "name": "Scheme GUI",
+            "technologys": "Scheme",
+            "description": "Il s'agit d'une interface graphique de SCHEME pour un répertoire de noms utilisant un fichier texte comme base de données. Vous pouvez ajouter, supprimer des contacts ainsi que sauvegarder et charger votre liste à partir du fichier texte.",
+            "images": ["./Images/database.png", "./Images/repertoire_bs.jpg", "./Images/repertoire_add.jpg", "./Images/repertoire.jpg"],
+            "link": ""
+        },
+        {
+            "name": "Mon site personnel",
+            "technologys": "Wordpress",
+            "description": "Il s'agit de mon site vitrine quasi identique à celui sur lequel vous êtes mais réaliser avec le CMS Wordpress",
+            "images": ["./Images/sitestaff.png"],
+            "link": "https://benjaminperonne.fr/src/Benjamin_Niddam"
+        },
+        {
+            "name": "Mosaïque d'images",
+            "technologys": "Python",
+            "description": "Il s'agit d'un script python qui utilise les bibliothèques os, PIL, et random pour recréer une image de fond avec ma moyenne de la couleur de chaque pixel d'autres images.",
+            "images": ["./Images/mosaique.jpg", "./Images/Chat_low_res.png", "./Images/Cheval_Blanc_low_res.png", "./Images/zoom.jpg"],
+            "link": "https://github.com/benja971/Images-mosa-que"
+        },
+        {
+            "name": "Test three.js",
+            "technologys": ["html", "css", "js", "three.js"],
+            "description": "Ce sont des tests que je fais avec la bibliothèque three.js qui permet de créer, importer et manier des modèles 3d dans une page web.",
+            "images": ["./Images/threejs.png", "./Images/my_first_threejs.gif"],
+            "link": "https://benjamin-niddam.dev/Three-js"
+        }
+    ]
+}

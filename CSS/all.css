@@ -79,11 +79,11 @@ nav a.left.selected:before {
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    background: transparent;
+    width: 8px; /*width of the entire scrollbar*/
 }
 body.top::-webkit-scrollbar {
     display: initial;
-    width: 8px; /*width of the entire scrollbar*/
 }
 
 body.top::-webkit-scrollbar-track {

@@ -1,0 +1,120 @@
+body {
+  background-color: gainsboro;
+}
+
+body main {
+  position: absolute;
+  width: 100%;
+  top: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav {
+  background-color: gray;
+}
+
+body .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-top: 4em;
+  gap: 3ch;
+}
+
+body .project .infos {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2em;
+}
+
+body .project .infos h2 {
+  font-weight: 400;
+  font-size: 2.625em;
+  line-height: 1.143;
+  color: #131622;
+}
+
+body .project .infos h6 {
+  font-weight: 700;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #131622;
+  letter-spacing: 1px;
+  margin: 1em 0 0.3em 0;
+}
+
+body .project .infos p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #24262c;
+  text-align: justify;
+  margin: 0 0 1em 0;
+}
+
+body .project .infos .divlinks {
+  cursor: pointer;
+}
+
+body .project .infos a {
+  text-decoration: none;
+  margin-left: 2ch;
+  color: black;
+}
+
+body .project .infos .divlinks:hover {
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .project .infos .divtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .project .infos .divtitle img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 2ch;
+}
+
+body .project .illustrations {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .project .illustrations img {
+  max-width: 200px;
+}
+/*# sourceMappingURL=portfolio.css.map */
