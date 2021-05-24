@@ -1,5 +1,10 @@
 /* Affichages spécifiques sur ordinateur */
 @media screen and (min-width: 1008px) {
+    body.top nav {
+        background-color: #ffffff;
+        color: black;
+    }
+
     #infos {
         position: relative;
         display: flex;
@@ -282,7 +287,6 @@
     #contact-card {
         display: flex;
         width: 100%;
-        background-color: #050401;
         justify-content: center;
         align-items: center;
     }

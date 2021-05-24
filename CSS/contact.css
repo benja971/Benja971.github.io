@@ -49,6 +49,12 @@
     -webkit-transition: border-color 0.2s;
     transition: border-color 0.2s;
   }
+  body main form .form__field:-webkit-autofill, body main form .form__field:-webkit-autofill:hover, body main form .form__field:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0 0 transparent inset;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+  }
   body main form .form__field::-webkit-input-placeholder {
     color: transparent;
   }
