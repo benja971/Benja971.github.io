@@ -1,97 +1,157 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
+@media screen and (min-width: 1008px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
 
-#landing {
-    width: 100%;
-    height: 100vh;
-}
-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-    padding: 25px 0 25px 0;
-    color: white;
-    -webkit-transition: background-color 0.2s, color 0.2s;
-    transition: background-color 0.2s, color 0.2s;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    height: 15vh;
-    cursor: default;
-}
-nav .menu-item {
-    margin-right: 3%;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    color: inherit;
-    cursor: pointer;
-}
-nav a.left {
-    position: relative;
-    padding-bottom: 1px;
-}
-nav a.left:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 4px;
-    bottom: 0;
-    left: 0;
-    background-color: red;
-    visibility: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-nav a.left:hover:before {
-    visibility: visible;
-    width: 100%;
-}
-nav a.left.selected:before {
-    visibility: visible;
-    width: 100%;
-}
-#logo {
-    position: inherit;
-    cursor: default;
-    left: 5%;
-}
-#logo img {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    max-height: 70px;
-    cursor: pointer;
-}
-#menu a:hover {
-    visibility: visible;
-    width: 100%;
-}
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
 
-body::-webkit-scrollbar {
-    background: transparent;
-    width: 8px; /*width of the entire scrollbar*/
-}
-body.top::-webkit-scrollbar {
-    display: initial;
-}
+    body.top nav {
+        background-color: #ffffff;
+        color: black;
+    }
 
-body.top::-webkit-scrollbar-track {
-    background: none; /* color of the tracking area */
-}
+    #landing {
+        width: 100%;
+        height: 100vh;
+    }
 
-body.top::-webkit-scrollbar-thumb {
-    background-color: rgb(242, 101, 89); /* color of the scroll thumb */
+    .bg {
+        position: fixed;
+        background-size: cover;
+        background-position: center;
+        --delay: 4s;
+        filter: brightness(60%);
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        animation: diapo calc(4 * var(--delay)) infinite;
+        opacity: 0;
+    }
+
+    #bg1 {
+        background-image: url("../Images/bg image.png");
+        animation-delay: calc(0 * var(--delay));
+    }
+
+    #bg2 {
+        background-image: url("../Images/formation-programmation-informatique-1.jpg");
+        animation-delay: calc(-1 * var(--delay));
+    }
+
+    #bg3 {
+        background-image: url("../Images/gros-plan-homme-ecrivant-du-code-ordinateur-portable_158595-5169.jpg");
+        animation-delay: calc(-2 * var(--delay));
+    }
+
+    #bg4 {
+        background-image: url("../Images/pexels-kevin-ku-577585.jpg");
+        animation-delay: calc(-3 * var(--delay));
+    }
+
+    @keyframes diapo {
+        0%,
+        12.5% {
+            opacity: 1;
+        }
+        25%,
+        87.5% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        padding: 25px 0 25px 0;
+        color: white;
+        -webkit-transition: background-color 0.2s, color 0.2s;
+        transition: background-color 0.2s, color 0.2s;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        height: 15vh;
+        cursor: default;
+    }
+    nav .menu-item {
+        margin-right: 3%;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: inherit;
+        cursor: pointer;
+    }
+    nav a.left {
+        position: relative;
+        padding-bottom: 1px;
+    }
+    nav a.left:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    nav a.left:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+    nav a.left.selected:before {
+        visibility: visible;
+        width: 100%;
+    }
+    #logo {
+        position: inherit;
+        cursor: default;
+        left: 5%;
+    }
+    #logo img {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        max-height: 70px;
+        cursor: pointer;
+    }
+    #menu a:hover {
+        visibility: visible;
+        width: 100%;
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px; /*width of the entire scrollbar*/
+    }
+    body.top::-webkit-scrollbar {
+        display: initial;
+    }
+
+    body.top::-webkit-scrollbar-track {
+        background: none; /* color of the tracking area */
+    }
+
+    body.top::-webkit-scrollbar-thumb {
+        background-color: rgb(242, 101, 89); /* color of the scroll thumb */
+    }
 }

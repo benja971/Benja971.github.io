@@ -3,56 +3,56 @@
         {
             "name": "BashBuild",
             "technologys": "C",
-            "description": "BashBuild est un jeu de simulation de gestion de ville dans le style Simscity mais en version console. En effet, vous devez construire des bâtiments (fermes, maison,…) qui rapportent de la nourriture et de l'argent. Ces ressources influent sur la population du jeu. Votre objectif est donc de faire prospérer cette dernière.",
+            "description": "BashBuild is a city management simulation game in the Simscity style but in console version. Indeed, you must build buildings (farms, house,…) which bring in food and money. These resources influence the population of the game. Your objective is therefore to make the latter prosper.",
             "images": ["./Images/BB0.png", "./Images/BB1.jpg", "./Images/BB3.jpg", "./Images/BB2.jpg"],
             "link": "https://github.com/benja971/Bash-Build"
         },
         {
             "name": "WhatsAppLike",
             "technologys": ["html", "css", "js"],
-            "description": "WhatsappLike est une application Web utilisant l'api \"WAL\" pour créer une copie Whatsapp. Comme whastapp, vous pouvez ajouter, supprimer des contacts. Envoyer des messages, …",
+            "description": "WhatsappLike is a web application using the \"WAL\" API to create a Whatsapp copy. Like whastapp, you can add, delete contacts, send messages, …",
             "images": ["./Images/wal1.png", "./Images/whatsappLike1.jpg", "./Images/whatsappLike4.jpg", "./Images/whatsappLike5.jpg"],
             "link": "https://benjamin-niddam.dev/WhatsAppLike"
         },
         {
             "name": "Shootixel",
             "technologys": "Python",
-            "description": "Shootixel est un jeu python 2D utilisant la bibliothèque pygame. Votre objectif est de survivre devant les vaisseaux spatiaux ennemis en tirant lazers pour les éliminer. Au fur et à mesure que le jeu progresse, les ennemis sont de plus en plus rapide, leurs trajectoire change et des boss peuvent apparaître. Pour vous aider, des bonus de vie, de vitesse et plus encore sont là.",
+            "description": "Shootixel est un jeu python 2D utilisant la bibliothèque pygame. Votre objectif est de survivre devant les vaisseaux spatiaux ennemis eShootixel is a 2D python game using the pygame library. Your objective is to survive in front of the enemy spaceships by shooting lazers to eliminate them. As the game progresses, the enemies are more and more fast, their trajectories change and bosses may appear. To help you, bonus life, speed and more are there. n tirant lazers pour les éliminer. Au fur et à mesure que le jeu progresse, les ennemis sont de plus en plus rapide, leurs trajectoires changent et des boss peuvent apparaître. Pour vous aider, des bonus de vie, de vitesse et plus encore sont là.",
             "images": ["./Images/PlayerRed_Frame_01_png_processed.png", "./Images/shoot1.jpg", "./Images/shoot2.jpg"],
             "link": "https://github.com/benja971/SHOOTIXEL"
         },
         {
             "name": "DrawApp",
             "technologys": "Java",
-            "description": "DrawApp est une application Java utilisant swing pour faire une copie de l'application de dessin Paint.",
+            "description": "DrawApp is a Java application that uses swing to make a copy of the Paint drawing application.",
             "images": ["./Images/paint.png", "./Images/drawapp.jpg", "./Images/edit.jpg", "./Images/file.jpg"],
             "link": "https://github.com/benja971/DrawApp"
         },
         {
             "name": "Scheme GUI",
             "technologys": "Scheme",
-            "description": "Il s'agit d'une interface graphique de SCHEME pour un répertoire de noms utilisant un fichier texte comme base de données. Vous pouvez ajouter, supprimer des contacts ainsi que sauvegarder et charger votre liste à partir du fichier texte.",
+            "description": "This is a SCHEME graphical interface for a directory of names using a text file as a database. You can add, delete contacts as well as save and load your list from the text file.",
             "images": ["./Images/database.png", "./Images/repertoire_bs.jpg", "./Images/repertoire_add.jpg", "./Images/repertoire.jpg"],
             "link": ""
         },
         {
-            "name": "Mon site personnel",
+            "name": "My personal website",
             "technologys": "Wordpress",
-            "description": "Il s'agit de mon site vitrine quasi identique à celui sur lequel vous êtes mais réaliser avec le CMS Wordpress",
+            "description": "This is my showcase site almost identical to the one you are on but made with the Wordpress CMS.",
             "images": ["./Images/sitestaff.png"],
             "link": "https://benjaminperonne.fr/src/Benjamin_Niddam"
         },
         {
-            "name": "Mosaïque d'images",
+            "name": "Image mosaic",
             "technologys": "Python",
-            "description": "Il s'agit d'un script python qui utilise les bibliothèques os, PIL, et random pour recréer une image de fond avec ma moyenne de la couleur de chaque pixel d'autres images.",
+            "description": "This is a python script that uses the os, PIL, and random libraries to recreate a background image with the color average of each pixel of other images.",
             "images": ["./Images/mosaique.jpg", "./Images/Chat_low_res.png", "./Images/Cheval_Blanc_low_res.png", "./Images/zoom.jpg"],
             "link": "https://github.com/benja971/Images-mosa-que"
         },
         {
-            "name": "Test three.js",
+            "name": "Three.js tests",
             "technologys": ["html", "css", "js", "three.js"],
-            "description": "Ce sont des tests que je fais avec la bibliothèque three.js qui permet de créer, importer et manier des modèles 3d dans une page web.",
+            "description": "These are tests that I do with the three.js library which allows to create, import and handle 3d models in a web page.",
             "images": ["./Images/threejs.png", "./Images/my_first_threejs.gif"],
             "link": "https://benjamin-niddam.dev/Three-js"
         }

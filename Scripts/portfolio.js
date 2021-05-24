@@ -25,7 +25,7 @@ addEventListener("load", (e) => {
             divlink.classList.add("divlinks");
 
             title.innerText = projet.name;
-            technos.innerText = "Technologies utilisées: " + projet.technologys;
+            technos.innerText = "Technology(s) used: " + projet.technologys;
             desc.innerText = projet.description;
 
             for (const src of projet.images.slice(1)) {

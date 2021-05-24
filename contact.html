@@ -5,19 +5,55 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./CSS/all.css" />
-        <link rel="stylesheet" href="./CSS/large_window.css" />
+        <link rel="stylesheet" href="./CSS/contact.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
         <title>Contact - NIDDAM Benjamin</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
+        <script src="./Scripts/script.js" defer async></script>
+        <script src="./Scripts/contact.js" defer async></script>
     </head>
     <body>
+        <div class="bg" id="bg1"></div>
+        <div class="bg" id="bg2"></div>
+        <div class="bg" id="bg3"></div>
+        <div class="bg" id="bg4"></div>
         <nav>
             <a id="logo" href="./index.html"><img src="./Images/logo.png" /></a>
-            <a id="menu-item-1" class="menu-item left" href="./index.html" aria-current="page" class="colorBlack">Home</a>
-            <a id="menu-item-2" class="menu-item left" href="">About me</a>
-            <a id="menu-item-3" class="menu-item left" href="">My curriculum vitae</a>
-            <a id="menu-item-4" class="menu-item left" href="./portfolio.html">My portfolio</a>
-            <a id="menu-item-5" class="menu-item left" href="./contact.html">Contact</a>
-            <a id="menu-item-6" class="menu-item left" href="">My horse galery</a>
+            <a id="home" class="menu-item left" href="./index.html" aria-current="page" class="colorBlack">Home</a>
+            <a id="about-me" class="menu-item left" href="./about-me.html">About me</a>
+            <a id="curriculum-vitae" class="menu-item left" href="./curriculum.html">My curriculum vitae</a>
+            <a id="portfolio" class="menu-item left" href="./portfolio.html">My portfolio</a>
+            <a id="contact" class="menu-item left" href="./contact.html">Contact</a>
+            <a id="horse-galery" class="menu-item left" href="./horse-galery.html">My horse galery</a>
         </nav>
+
+        <main>
+            <form action="https://formsubmit.co/benja.niddam@gmail.com" method="POST">
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+                    <label for="name" class="form__label">Name</label>
+                </div>
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="firstname" name="firstname" id="firstname" />
+                    <label for="firstname" class="form__label">Firstame</label>
+                </div>
+                <div class="form__group field">
+                    <input type="email" class="form__field" placeholder="Email" name="email" id="email" required />
+                    <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Subject" name="subject" id="subject" required />
+                    <label for="subject" class="form__label">Subject</label>
+                </div>
+                <div class="form__group field">
+                    <textarea class="form__field" placeholder="Your Message" name="message" required></textarea>
+                    <label for="message" class="form__label">Message</label>
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type = "hidden" name = "_ next" value = "https://benjamin-niddam.dev/contact.html">
+
+                <button class="form-submit-button" type="submit">Send mail</button>
+        </main>
     </body>
-    <script src="./Scripts/script.js"></script>
 </html>

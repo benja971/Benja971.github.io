@@ -1,55 +1,65 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
+@media screen and (min-width: 1008px) {
+    html {
+        position: relative;
+        height: 100vh;
+    }
 
-body {
-  background: #000;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
+    body {
+        height: 100%;
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-.swiper-container {
-  width: 100%;
-  height: 85vh;
-  margin-top: 15vh;
-}
+    .swiper-container.mySwiper.swiper-container-coverflow.swiper-container-3d.swiper-container-initialized.swiper-container-horizontal {
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+        z-index: 1;
+    }
 
-.swiper-container .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 400px;
-  height: 720px;
-  padding-top: 8vw;
-}
+    .swiper-container .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 720px;
+    }
 
-.swiper-container .swiper-slide img {
-  display: block;
-  width: 100%;
-}
+    .swiper-container .swiper-slide {
+        padding-top: 8%;
+        max-height: 100px;
+    }
 
-.swiper-container-horizontal {
-  bottom: 50px;
-  left: 0;
-  width: 100%;
-}
+    .swiper-container .swiper-slide img {
+        display: block;
+        width: 100%;
+    }
 
-.swiper-container-horizontal .swiper-pagination.swiper-pagination-bullets {
-  background-color: transparent;
-}
+    .swiper-container-horizontal {
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+    }
 
-.swiper-container-horizontal .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-  background-color: #f26559;
+    .swiper-container-horizontal .swiper-pagination.swiper-pagination-bullets {
+        background-color: transparent;
+    }
+
+    .swiper-container-horizontal .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: #f26559;
+    }
+    /*# sourceMappingURL=horse-galery.css.map */
 }
-/*# sourceMappingURL=horse-galery.css.map */
