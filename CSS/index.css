@@ -325,9 +325,3 @@
         margin-top: 0.1%;
     }
 }
-
-@media screen and (min-width: 642px) and (max-width: 959px) {
-    * {
-        background-color: blue;
-    }
-}
