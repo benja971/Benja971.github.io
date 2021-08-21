@@ -1,5 +1,5 @@
 function getScroll() {
-    var h = document.documentElement,
+    let h = document.documentElement,
         st = "scrollTop";
     return h[st];
 }
